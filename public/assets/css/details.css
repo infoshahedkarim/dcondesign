@@ -1,0 +1,257 @@
+ body {
+     margin: 0;
+     background-color: #000;
+     color: #fff;
+ }
+
+ .container {
+     display: flex;
+     height: 100vh;
+     overflow: hidden;
+ }
+
+
+ .left-panel {
+     background-color: #000;
+     color: #fff;
+     padding: 50px 40px;
+     width: 35%;
+     overflow-y: auto;
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+ }
+
+
+ .project-header h2 {
+     font-size: 20px;
+     font-weight: normal;
+     letter-spacing: 2px;
+     color: #fff;
+     margin-bottom: 4px;
+ }
+
+ .project-header h4 {
+     font-size: 14px;
+     letter-spacing: 1px;
+     text-transform: uppercase;
+     margin-top: 0;
+     margin-bottom: 0;
+ }
+
+ .dohs-box-wrapper {
+     position: relative;
+     width: 100%;
+     height: 20px;
+     margin-bottom: 30px;
+ }
+
+ .dohs-box {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(170, 170, 170, 0.2);
+     border-radius: 1px;
+     z-index: 1;
+ }
+
+ .dohs-text {
+     position: absolute;
+     top: 50%;
+     left: 160px;
+     transform: translateY(-50%);
+     margin: 0;
+     font-size: 14px;
+     letter-spacing: 1px;
+     text-transform: uppercase;
+     color: #fff;
+     z-index: 2;
+     /* Above the box */
+ }
+
+
+ .info-table {
+     width: 100%;
+     border-collapse: collapse;
+     border: none;
+ }
+
+ .info-table td {
+     border: 1px solid transparent;
+     padding: 6px 10px;
+     vertical-align: top;
+ }
+
+ .info-table1 {
+     width: 100%;
+     border-collapse: collapse;
+     border: none;
+ }
+
+ .info-table1 td {
+     border: none;
+     padding: 0;
+     text-align: left;
+ }
+
+ .info-table1 td:first-child {
+     width: 26%;
+ }
+
+ .label {
+     width: 130px;
+     font-size: 11px;
+     color: #888;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+     line-height: 1.4;
+     text-align: right;
+     padding-right: 15px;
+     white-space: nowrap;
+ }
+
+ .value {
+     padding-left: 10px;
+     font-size: 13px;
+     color: #beb5b5;
+     line-height: 1.5;
+ }
+
+ .swiper {
+     width: 65%;
+     height: 100vh;
+     position: relative;
+ }
+
+ .swiper-slide {
+     height: 90vh;
+ }
+
+ .swiper-slide img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     display: block;
+     transition: border 0.3s, box-shadow 0.3s;
+     border: 2px solid transparent;
+ }
+
+ .swiper-slide img:hover {
+     border: 2px solid #555555;
+     box-shadow: 0 0 10px rgba(77, 77, 77, 0.5);
+ }
+
+ .swiper-wrapper {
+     gap: 20px !important;
+ }
+
+
+ .pagination-bottom {
+     position: static !important;
+     margin-top: 30px;
+     display: flex !important;
+     justify-content: flex-end;
+     gap: 10px;
+     padding-left: 0;
+     flex-direction: row !important;
+ }
+
+
+ .swiper-pagination-bullet {
+     width: 10px;
+     height: 10px;
+     background: #696969;
+     opacity: 0.5;
+     border-radius: 50%;
+     transition: all 0.3s ease;
+ }
+
+ .swiper-pagination-bullet-active {
+     background: #818181;
+     opacity: 1;
+     transform: scale(1.2);
+ }
+
+
+ .swiper-pagination-bullet {
+     width: 10px;
+     height: 10px;
+     background: #353535;
+     opacity: 0.5;
+     border-radius: 50%;
+     transition: all 0.3s ease;
+ }
+
+ .swiper-pagination-bullet-active {
+     background: #4e4e4e;
+     opacity: 1;
+     transform: scale(1.2);
+ }
+
+ .left-panel::-webkit-scrollbar {
+     width: 6px;
+ }
+
+ .left-panel::-webkit-scrollbar-thumb {
+     background-color: #444;
+ }
+
+
+
+ @media (max-width: 768px) {
+     .container {
+         display: flex;
+         flex-direction: column;
+         height: auto;
+     }
+
+     .left-panel {
+         order: 2;
+         width: 100%;
+         height: auto;
+         padding: 30px 20px;
+     }
+
+     .swiper {
+         order: 1;
+         width: 100%;
+         height: 60vh;
+     }
+
+     .swiper-slide {
+         height: 60vh;
+     }
+
+     .swiper-wrapper {
+         flex-direction: row;
+     }
+
+     .swiper-pagination {
+         justify-content: center !important;
+         bottom: 10px;
+     }
+
+     .dohs-text {
+         right: 800px;
+         transform: translate(-100%, -50%);
+         text-align: right;
+         font-size: 10px !important;
+     }
+
+     .project-header h2 {
+         text-align: center;
+         padding-left: 15% !important;
+     }
+
+     .label1,
+     .value1 {
+         font-size: 12px !important;
+         line-height: 1.4;
+         word-wrap: break-word;
+         white-space: normal;
+     }
+
+
+ }

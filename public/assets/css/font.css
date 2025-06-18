@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "CGB";
+  src: url("../fonts/CenturyGothicBold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CGI";
+  src: url("../fonts/CenturyGothicItalic.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CG";
+  src: url("../fonts/CenturyGothic.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
