@@ -71,18 +71,21 @@ video.active {
 
 
 .footer-nav {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;  /* or center */
   position: absolute;
   bottom: 50px;
   left: 100px;
   right: 100px;
-  display: flex;
-  gap: 30px;
   z-index: 10;
 }
+
 
 .nav-item {
   position: relative;
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: column;
   align-items: flex-end;
 }
@@ -107,26 +110,15 @@ video.active {
 }
 
 .nav-dot {
+  height: 10px;
   width: 260px;
-  height: 11px;
   position: relative;
   background-color: rgba(255, 255, 255, 0.6);
   cursor: pointer;
   overflow: hidden;
+  transition: width 0.3s ease, height 0.3s ease;
 }
 
-@media (max-width: 1440px) {
-  .nav-dot {
-  width: 185px;
-  height: 10px;
-  }
-}
-@media (max-width: 1024px) {
-   .nav-dot {
-  width: 115px;
-  height: 8px;
-  }
-}
 
 .nav-dot::before {
   content: "";

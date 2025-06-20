@@ -62,7 +62,9 @@ Home |
 
     <div class="footer-nav">
         <div class="nav-item">
-            <div class="nav-dot"></div><span class="nav-label">WE</span>
+            <a href="{{route('projects')}}">
+                <div class="nav-dot"></div>
+            </a><span class="nav-label">WE</span>
         </div>
         <div class="nav-item">
             <a href="{{route('projects')}}">
@@ -70,16 +72,24 @@ Home |
             </a><span class="nav-label">PROJECTS</span>
         </div>
         <div class="nav-item">
-            <div class="nav-dot"></div><span class="nav-label">AWARDS</span>
+            <a href="{{route('projects')}}">
+                <div class="nav-dot"></div>
+            </a><span class="nav-label">AWARDS</span>
         </div>
         <div class="nav-item">
-            <div class="nav-dot"></div><span class="nav-label">ASSOCIATES</span>
+            <a href="{{route('projects')}}">
+                <div class="nav-dot"></div>
+            </a><span class="nav-label">ASSOCIATES</span>
         </div>
         <div class="nav-item">
-            <div class="nav-dot"></div><span class="nav-label">CLIENTS</span>
+            <a href="{{route('projects')}}">
+                <div class="nav-dot"></div>
+            </a><span class="nav-label">CLIENTS</span>
         </div>
         <div class="nav-item">
-            <div class="nav-dot"></div><span class="nav-label">UPDATES</span>
+            <a href="{{route('projects')}}">
+                <div class="nav-dot"></div>
+            </a><span class="nav-label">UPDATES</span>
         </div>
     </div>
 
