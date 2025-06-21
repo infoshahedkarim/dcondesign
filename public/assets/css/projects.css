@@ -251,6 +251,8 @@ header {
         font-size: 12px;
     }
 }
+
+
 @media (max-width: 768px) {
   .grid-container {
     display: grid;
@@ -360,6 +362,30 @@ header {
   .hide-mobile {
     display: none !important;
   }
+}
+
+
+
+@media (max-width: 600px) {
+.menu:nth-child(11)::before {
+    background-color: #f4a300;
+    margin-bottom: -1%;
+}
+
+.menu:nth-child(12)::before {
+    background-color: #c8352c;
+    margin-bottom: -28%;
+}
+
+.menu:nth-child(13)::before {
+    background-color: #a8a8a8;
+    margin-bottom: -13%;
+}
+
+.menu:nth-child(14)::before {
+    background-color: #d4f542;
+    margin-bottom: 5%;
+}
 }
 
 
