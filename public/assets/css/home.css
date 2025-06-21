@@ -119,6 +119,25 @@ video.active {
   transition: width 0.3s ease, height 0.3s ease;
 }
 
+@media (min-width: 1440px) and (max-width: 1700px) {
+  .nav-dot {
+    width: 200px;
+    height: 8px;
+  }
+}
+@media (min-width: 1040px) and (max-width: 1440px) {
+  .nav-dot {
+    width: 180px;
+    height: 8px;
+  }
+}
+@media (min-width: 720px) and (max-width: 1040px) {
+  .nav-dot {
+    width: 160px;
+    height: 8px;
+  }
+}
+
 
 .nav-dot::before {
   content: "";
